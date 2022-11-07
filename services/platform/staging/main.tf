@@ -1,3 +1,8 @@
+locals {
+  kubectl_minor_version = replace(trim(yamldecode(file("${path.root}/../../../aqua.yaml")).packages[1].version, "v"), "/\\.\\d*$/", "")
+  eks_cluster_version   = var.eks_cluster_version != "" ? var.eks_cluster_version : local.kubectl_minor_version
+}
+
 #tfsec:ignore:aws-ec2-no-public-ip-subnet
 #tfsec:ignore:aws-ec2-require-vpc-flow-logs-for-all-vpcs false positive
 module "vpc" {
@@ -36,7 +41,7 @@ module "eks" {
   version = "18.30.2"
 
   cluster_name    = "${var.env}-${var.eks_cluster_name_suffix}"
-  cluster_version = var.eks_cluster_version
+  cluster_version = local.eks_cluster_version
 
   cluster_endpoint_private_access = true
   cluster_endpoint_public_access  = true

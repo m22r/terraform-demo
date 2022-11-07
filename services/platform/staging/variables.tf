@@ -46,7 +46,7 @@ variable "eks_cluster_name_suffix" {
 
 variable "eks_cluster_version" {
   type        = string
-  default     = "1.22"
+  default     = ""
   description = "Kubernetes <major>.<minor> version to use for the EKS cluster (i.e.: 1.22)"
 }
 
