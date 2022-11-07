@@ -1,0 +1,4 @@
+bucket="wagayano-terraform-tfstate"
+key="platform/staging.tfstate"
+encrypt="true"
+kms_key_id="dfe7f03c-c492-4edb-85b6-fc82769c6cb1"
