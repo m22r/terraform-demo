@@ -13,14 +13,13 @@ jobs:
     steps:
     - name: Checkout repository
       uses: actions/checkout@v2
-      with:
-        fetch-depth: 0
 
     - name: Conventional Changelog Action
       id: changelog
       uses: TriPSs/conventional-changelog-action@v3
       with:
-        skip-git-pull: "true"
+        output-file: "false"
+        skip-commit: "true"
         github-token: ${{ secrets.github_token }}
     
     - name: Create Release
