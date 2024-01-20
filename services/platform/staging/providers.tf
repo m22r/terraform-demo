@@ -3,7 +3,7 @@ terraform {
   required_providers {
     aws = {
       source  = "hashicorp/aws"
-      version = "5.32.1"
+      version = "5.33.0"
     }
   }
   # ref. https://developer.hashicorp.com/terraform/language/settings/backends/configuration#partial-configuration
