@@ -7,7 +7,7 @@ locals {
 #tfsec:ignore:aws-ec2-require-vpc-flow-logs-for-all-vpcs false positive
 module "vpc" {
   source  = "terraform-aws-modules/vpc/aws"
-  version = "5.6.0"
+  version = "5.7.0"
 
   name = "${var.env}-${var.vpc_name_suffix}"
   cidr = var.vpc_cidr
