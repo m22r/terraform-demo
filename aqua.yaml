@@ -9,7 +9,7 @@ registries:
 - type: standard
   ref: v4.196.0 # renovate: depName=aquaproj/aqua-registry
 packages:
-- name: hashicorp/terraform@v1.8.5
+- name: hashicorp/terraform@v1.9.0
 - name: kubernetes/kubectl
   version: v1.23.13 # EKSのバージョンに揃えるため最新に追従しない
 - name: aws/aws-cli@2.17.5
