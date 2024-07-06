@@ -13,4 +13,4 @@ packages:
 - name: kubernetes/kubectl
   version: v1.23.13 # EKSのバージョンに揃えるため最新に追従しない
 - name: aws/aws-cli@2.17.5
-- name: aquasecurity/tfsec@v1.28.9
+- name: aquasecurity/tfsec@v1.28.10
