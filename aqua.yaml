@@ -7,7 +7,7 @@
 #   require_checksum: true
 registries:
 - type: standard
-  ref: v4.223.1 # renovate: depName=aquaproj/aqua-registry
+  ref: v4.226.0 # renovate: depName=aquaproj/aqua-registry
 packages:
 - name: hashicorp/terraform@v1.9.6
 - name: kubernetes/kubectl
