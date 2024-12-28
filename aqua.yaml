@@ -12,5 +12,5 @@ packages:
 - name: hashicorp/terraform@v1.10.3
 - name: kubernetes/kubectl
   version: v1.23.13 # EKSのバージョンに揃えるため最新に追従しない
-- name: aws/aws-cli@2.22.22
+- name: aws/aws-cli@2.22.25
 - name: aquasecurity/tfsec@v1.28.11
