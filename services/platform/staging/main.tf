@@ -38,7 +38,7 @@ data "aws_iam_role" "admin" {
 #tfsec:ignore:aws-eks-no-public-cluster-access-to-cidr
 module "eks" {
   source  = "terraform-aws-modules/eks/aws"
-  version = "21.1.0"
+  version = "21.1.3"
 
   cluster_name    = "${var.env}-${var.eks_cluster_name_suffix}"
   cluster_version = local.eks_cluster_version
